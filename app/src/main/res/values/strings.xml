@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppCriptoMonedas</string>
+    <string name="nombre_criptomoneda">Nombre criptomoneda</string>
+    <string name="currency">Divisa</string>
+    <string name="price">Precio</string>
+    <string name="rank">Rango</string>
+    <string name="status">Estado</string>
+    <string name="id">Id criptomoneda</string>
+    <string name="high">High</string>
+    <string name="firstCandle">First Candle</string>
+    <string name="num_exchanges">Exchanges</string>
+
+</resources>
