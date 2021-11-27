@@ -1,5 +1,7 @@
 package cl.valentina.appcriptomonedas
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -23,6 +25,7 @@ class ActivityDetalleCriptomoneda : AppCompatActivity() {
         viewModelDetalle = ViewModelProvider(this).get(ViewModelDetalle::class.java)
 
         inicioUI()
+        enviarCorreo()
 
     }
     fun inicioUI() {
@@ -41,11 +44,21 @@ class ActivityDetalleCriptomoneda : AppCompatActivity() {
             Glide.with(this)
                 .load(detalleCripto.logo_url)
                 .into(imagenDetalle)
-
         })
-
     }
-
+    fun enviarCorreo() {
+        botonCorreo.setOnClickListener{
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.data = Uri.parse("mailto:")
+            intent.type= "text/plain"
+            intent.putExtra(Intent.EXTRA_EMAIL,"ventas@anchorBooks.cl")
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Consulta por libro")
+            intent.putExtra(Intent.EXTRA_TEXT, "Hola \n" +
+                    "Quisiera pedir información sobre esta moneda " + NombreCripto +", me gustaría que me contactaran a " +
+                    "este correo o al siguiente número _________")
+            startActivity(intent)
+        }
+    }
 }
 
 
