@@ -8,7 +8,7 @@ import androidx.room.TypeConverters
 import cl.valentina.appcriptomonedas.model.DetalleCriptomonedaModelItem
 import cl.valentina.appcriptomonedas.model.TypeConverterD
 
-@Database(entities = [DetalleCriptomonedaModelItem::class], version = 1, exportSchema = false)
+/*@Database(entities = [DetalleCriptomonedaModelItem::class], version = 1, exportSchema = false)
 @TypeConverters(TypeConverterD::class)
 abstract class DatabaseDetalleCriptomoneda : RoomDatabase() {
 
@@ -32,4 +32,4 @@ abstract class DatabaseDetalleCriptomoneda : RoomDatabase() {
         }
 
     }
-}
+}*/

@@ -3,9 +3,9 @@ package cl.valentina.appcriptomonedas
 import android.app.Application
 import cl.valentina.appcriptomonedas.network.RetrofitApiService
 import cl.valentina.appcriptomonedas.room.DaoCriptomonedas
-import cl.valentina.appcriptomonedas.room.DaoDetalleCriptomoneda
+
 import cl.valentina.appcriptomonedas.room.DatabaseCriptomonedas
-import cl.valentina.appcriptomonedas.room.DatabaseDetalleCriptomoneda
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,17 +19,17 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class AppModulo {
 
-    @Provides
+    /*@Provides
     @Singleton
     fun getDetalleDatabase(context: Application): DatabaseDetalleCriptomoneda {
         return DatabaseDetalleCriptomoneda.getAppDetalleDbInstance(context)
-    }
+    }*/
 
-    @Provides
+    /*@Provides
     @Singleton
     fun getDaoDetalle(databaseDetalleCriptomoneda: DatabaseDetalleCriptomoneda): DaoDetalleCriptomoneda {
         return databaseDetalleCriptomoneda.getDaoDetalleCriptomonedas()
-    }
+    }*/
 
     @Provides
     @Singleton

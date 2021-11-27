@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import cl.valentina.appcriptomonedas.model.DetalleCriptomonedaModelItem
 import cl.valentina.appcriptomonedas.network.RetrofitApiService
-import cl.valentina.appcriptomonedas.repository.RepositoryDetalle
+//import cl.valentina.appcriptomonedas.repository.RepositoryDetalle
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ViewModelDetalle @Inject constructor(
-    private val repositoryDetalle: RepositoryDetalle,
+    //private val repositoryDetalle: RepositoryDetalle,
     private val retrofitApiService: RetrofitApiService
 ): ViewModel() {
     val detalleCripto = MutableLiveData<DetalleCriptomonedaModelItem>()

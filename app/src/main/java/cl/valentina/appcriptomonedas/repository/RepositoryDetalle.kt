@@ -3,10 +3,10 @@ package cl.valentina.appcriptomonedas.repository
 import androidx.lifecycle.LiveData
 import cl.valentina.appcriptomonedas.model.DetalleCriptomonedaModelItem
 import cl.valentina.appcriptomonedas.network.RetrofitApiService
-import cl.valentina.appcriptomonedas.room.DaoDetalleCriptomoneda
+//import cl.valentina.appcriptomonedas.room.DaoDetalleCriptomoneda
 import javax.inject.Inject
 
-class RepositoryDetalle @Inject constructor(
+/*class RepositoryDetalle @Inject constructor(
     private val retrofitApiService: RetrofitApiService,
     private val daoDetalleCriptomoneda: DaoDetalleCriptomoneda
 ) {
@@ -25,4 +25,4 @@ class RepositoryDetalle @Inject constructor(
         api={retrofitApiService.getDetalleCriptomoneda(id)},
         guardarApi={daoDetalleCriptomoneda.insert(id)}
     )*/
-}
+}*/

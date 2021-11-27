@@ -7,7 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import cl.valentina.appcriptomonedas.model.DetalleCriptomonedaModelItem
 
-@Dao
+/*@Dao
 interface DaoDetalleCriptomoneda {
 
     @Query("SELECT * FROM DetalleCriptomonedas")
@@ -22,4 +22,4 @@ interface DaoDetalleCriptomoneda {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(detalleCriptomoneda: DetalleCriptomonedaModelItem)
 
-}
+}*/

@@ -3,7 +3,7 @@ package cl.valentina.appcriptomonedas.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "DetalleCriptomonedas")
+//@Entity(tableName = "DetalleCriptomonedas")
 data class DetalleCriptomonedaModelItem(
     val `1d`: D?,
     val circulating_supply: String?,
