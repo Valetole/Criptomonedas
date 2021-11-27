@@ -52,7 +52,7 @@ class ActivityDetalleCriptomoneda : AppCompatActivity() {
             intent.data = Uri.parse("mailto:")
             intent.type= "text/plain"
             intent.putExtra(Intent.EXTRA_EMAIL,"ventas@anchorBooks.cl")
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Consulta por libro")
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Consulta por criptomoneda")
             intent.putExtra(Intent.EXTRA_TEXT, "Hola \n" +
                     "Quisiera pedir información sobre esta moneda " + NombreCripto +", me gustaría que me contactaran a " +
                     "este correo o al siguiente número _________")
