@@ -51,7 +51,7 @@ class ActivityDetalleCriptomoneda : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_SEND)
             intent.data = Uri.parse("mailto:")
             intent.type= "text/plain"
-            intent.putExtra(Intent.EXTRA_EMAIL,"ventas@anchorBooks.cl")
+            intent.putExtra(Intent.EXTRA_EMAIL,"Info@cryptoinvest.c")
             intent.putExtra(Intent.EXTRA_SUBJECT, "Consulta por criptomoneda")
             intent.putExtra(Intent.EXTRA_TEXT, "Hola \n" +
                     "Quisiera pedir información sobre esta moneda " + NombreCripto +", me gustaría que me contactaran a " +
