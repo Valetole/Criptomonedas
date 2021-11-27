@@ -30,16 +30,16 @@ class ActivityDetalleCriptomoneda : AppCompatActivity() {
 
         viewModelDetalle.llamadaApiVm(id)
 
-        viewModelDetalle.detalleCripto.observe(this, Observer {
-            NombreCripto.text=it.name
-            currency.text =it.currency
-            precio.text=it.price
-            status.text=it.status
-            rank.text=it.rank
-            exchanges.text=it.num_exchanges
+        viewModelDetalle.detalleCripto.observe(this, Observer { detalleCripto ->
+            NombreCripto.text = detalleCripto.name
+            currency.text = detalleCripto.currency
+            precio.text = detalleCripto.price
+            status.text = detalleCripto.status
+            rank.text = detalleCripto.rank
+            exchanges.text = detalleCripto.num_exchanges
 
             Glide.with(this)
-                .load(it.logo_url)
+                .load(detalleCripto.logo_url)
                 .into(imagenDetalle)
 
         })

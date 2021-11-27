@@ -34,9 +34,10 @@ class MainActivity : AppCompatActivity() {
             
             val decoration = DividerItemDecoration(applicationContext,DividerItemDecoration.VERTICAL)
             addItemDecoration(decoration)
-            adapterCriptomonedas = AdapterCriptomonedas { val intent = Intent (this@MainActivity, ActivityDetalleCriptomoneda::class.java)
-            intent.putExtra("id",it)
-            startActivity(intent)}
+            adapterCriptomonedas = AdapterCriptomonedas {
+                val intent= Intent(this@MainActivity,ActivityDetalleCriptomoneda::class.java)
+                intent.putExtra("id",it)
+                startActivity(intent)}
             adapter = adapterCriptomonedas
         }
     }
